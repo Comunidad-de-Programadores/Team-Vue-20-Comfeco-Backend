@@ -1,9 +1,10 @@
+require("dotenv").config();
+
 /**
  * Module dependencies.
  */
 
 const app = require("../app");
-const debug = require("debug")("team-vue-20-comfeco-backend:server");
 const http = require("http");
 
 /**
@@ -60,16 +61,16 @@ function onError(error) {
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
-    case "EACCES":
-      console.error(bind + " requires elevated privileges");
-      process.exit(1);
-      break;
-    case "EADDRINUSE":
-      console.error(bind + " is already in use");
-      process.exit(1);
-      break;
-    default:
-      throw error;
+  case "EACCES":
+    console.error(bind + " requires elevated privileges");
+    process.exit(1);
+    break;
+  case "EADDRINUSE":
+    console.error(bind + " is already in use");
+    process.exit(1);
+    break;
+  default:
+    throw error;
   }
 }
 
@@ -79,6 +80,6 @@ function onError(error) {
 
 function onListening() {
   const addr = server.address();
-  const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
-  debug("Listening on " + bind);
+  const bind = typeof addr === "string" ? addr : addr.port;
+  console.log("Listening on http://localhost:" + bind);
 }
