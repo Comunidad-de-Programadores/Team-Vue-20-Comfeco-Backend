@@ -5,12 +5,12 @@ const WorkshopSchema = new Schema({
   title: String,
   description: String,
   referral: String,
-  time: {
+  date: {
     type: Date,
     default: Date.now,
   },
   organizer: String,
-  area_id: String,
+  area: String,
 });
 
 module.exports = mongoose.model("Workshop", WorkshopSchema);

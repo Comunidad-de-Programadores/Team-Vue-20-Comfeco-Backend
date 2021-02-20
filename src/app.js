@@ -21,7 +21,7 @@ connection.on("error", () => {
 });
 connection.once("open", () => {
   console.log("Conectado a MongoDB!!!");
-  // connection.dropDatabase()
+  // connection.dropDatabase();
 });
 
 const app = express();

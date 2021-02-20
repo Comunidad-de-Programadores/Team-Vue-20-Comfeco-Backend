@@ -7,9 +7,9 @@ const createWorkshop = (workshop) => {
   });
 };
 
-const getWorkshops = async (title, limit = 10, offset = 0) => {
+const getWorkshops = async (area, limit = 10, offset = 0) => {
   const total = await Workshop.count();
-  const results = await Workshop.find({ title: { $regex: title } })
+  const results = await Workshop.find({ area: { $regex: area } })
     .limit(limit)
     .skip(offset);
   return {
@@ -18,7 +18,17 @@ const getWorkshops = async (title, limit = 10, offset = 0) => {
   };
 };
 
+const getWorkShopById = (workshopId) => {
+  return Workshop.findById(workshopId);
+};
+
+const removeWorkShopById = (workshopId) => {
+  return Workshop.findByIdAndRemove(workshopId);
+};
+
 module.exports = {
   createWorkshop,
   getWorkshops,
+  getWorkShopById,
+  removeWorkShopById,
 };
