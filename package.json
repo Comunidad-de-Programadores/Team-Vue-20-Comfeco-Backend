@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run lint && node ./bin/www",
+    "start": "npm run lint && node ./src/server",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "precommit": "lint-staged"
