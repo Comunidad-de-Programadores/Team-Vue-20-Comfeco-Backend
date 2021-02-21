@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-set -eo pipefail
-echo "-----> Creating firebase key file"
-echo $FIREBASE_JSON_KEY > $FIREBASE_JSON_KEY_FILE
