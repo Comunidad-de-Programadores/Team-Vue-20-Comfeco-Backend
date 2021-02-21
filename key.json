@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "comfeco-management-system",
+  "private_key_id": "9e7ee4737b899236d91133a3884ee3685f82a30f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDizfygaWmIhGxo\nnzfAUFm60GFr6vgDu9nyn9pD3syQ1R8nxfnirhIKmzvkQQu+NcubGxQYpYYK40dW\nofk+yCF7T0DzcCxSlHe2zJY5n9j1bw39FsY8jE0uyOEZmhSxdUZ7Sy2l4hiGoa79\nDHMOvpdM1mOOj2IKsAAey65VYYVmIE7BAL2h2okHZrqkfYBYUKlqkASlOjhV4AL9\nq69oeMGc9i8TsueDam92HgirTrGAkRJjgMFjMJi9VHaK9pO1pZQ4QOsDy4Zppg50\nX1a6FtZR9bttM5xMEThkd+ykQldQlWXJIT9PiXoEajzhL/mCRTNyaQaZ5J/Rdk7y\nJxf/Ryg5AgMBAAECggEACBfi5gwA67HTBwQ4enS7kPim41GYDlUNnNRyttWMXfY2\n9YXBaiL9SpLZxyZBj6Tuii9EDzGX6AtOdENVKDX+yN5OAmncMQmygGvKSA3h0XdI\nK+H8SrSUfAEH1FCs4Jy/Wj63ZyobZzF9k7LWJ75qGoAzfwazkE9Rv8eTpeEUIC3h\ngBY0na0zWcoHq0VcHbT1C4DZr9nJ5AVqxwLUqsH07mCXKVOgmgvwe4KCYWzBQn1/\nza8t9HaczlFF+Qlax4zdQk0tjifet+skIe/3INTQXSDTjwOWVSx02vM7SyaUi1f3\nSZAnHM+bUqTWfU0Keb8xGTLycjiv+lyduoHAFomIoQKBgQD6BLnxZnCilA1fUgiV\n+EnBkQoVAvDsFp4hyKtYt4aowqYcPthZ9sW7pqcrypT1fsh4tHn9mUsj/xbSSMJE\nfWORPr1Ss8Cvw+3vUBvZZnNGMQ7IfNGLIB4CdJjbOeuAqipUSa2LT5u0P6MPzRFk\neWy0l+PT/pSQ6CEv2gJJeIwy2QKBgQDoOxWHkZjisFWuNa17FPdf/jStghQgKrLi\nZ8SefcG7xSR19kcVKKRC5tmSdjpEtAVLYbfIk2p4BWYSPPEFi7zB8odfoKGWQ28h\nK/9k/ib7pOk6MQU+M7tFN71vbqZKGqEFUQt/5doU1JeLNEWTl/tIF2tjjAOPitbe\nr/05cXCEYQKBgAMFe5nHOyU71M2KGEB3t6x3LEAEwRSZUV/nJOr1jNMNRySgPc0Y\nhls2MF7/G727woBy7eZ6q8XLl2MDLhXVzhY7Q95z/agiHgX+WdfOvSXkAeG6YG3l\n/XbaId7EXGw5ojlSip5cX+1Vt4rBV6x3KzEjhMVTFkiKBZymbdClfExBAoGAPb/I\nH74VGuGsRqA7Oqj+heW/+ArIcy0nV5Aj9ciWhOkMotkTWYru8mMToyAQqkf7yGl5\nRrn762H0HBFcPQ9E54UnfcPmc2AG4pkiVaZGk07sPO7f6AQ1XVhO5JxVVwrxmcpM\n9nsVm8hTa05A2dflluuzQErwf3B5ZckB2g5RzsECgYEAwfPIp+LCnyFVJ7UosupQ\nHAUnI5g411cVpZYhLrnYJWy3B/ewyqFCAsUTeCNf0pdF2/hq+CGNwrT0gFteXMbY\nSYierZwEp63aTiPdCj0HqHwUafY02fLdpev0O2mhPgsUF0TRpY2+0j4KF/+wA5pR\nbpraaJ8+lBJx4GXTj7rDs5g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-p91j6@comfeco-management-system.iam.gserviceaccount.com",
+  "client_id": "111090099812537042605",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-p91j6%40comfeco-management-system.iam.gserviceaccount.com"
+}
