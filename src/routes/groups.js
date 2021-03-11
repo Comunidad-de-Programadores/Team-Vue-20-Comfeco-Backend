@@ -4,38 +4,39 @@ const {
   createGrouop,
   getGroup,
   getGroupById,
-  removeGroupById
+  removeGroupById,
 } = require("../controllers/group");
 
 /* GET /groups */
-router.get("/",async (req,res)=>{
+router.get("/", async (req, res) => {
   const lang = req.query.lang || "";
-  const limit = req.query.limit || 10;
-  const offset = req.query.offset || 0;
-  const groups = await getGroup(lang,limit,offset);
+  const q = req.query.search || "";
+  const limit = parseInt(req.query.limit) || 10;
+  const offset = parseInt(req.query.offset) || 0;
+  const groups = await getGroup(q, lang, limit, offset);
   res.send(groups);
 });
 
 /* GET /groups/:id */
-router.get("/:id",async (req,res)=>{
+router.get("/:id", async (req, res) => {
   const groupId = req.params.id || "";
   const group = await getGroupById(groupId);
-  if(!group){
+  if (!group) {
     res.status(404).send({ detail: "Not Found" });
   }
 });
 
 /* POST /groups */
-router.post("/",async (req,res)=>{
+router.post("/", async (req, res) => {
   const group = await createGrouop(req.body);
   res.status(204).send(group);
 });
 
 /* DELETE /groups/:id */
-router.delete("/:id",async (req,res)=>{
+router.delete("/:id", async (req, res) => {
   const groupId = req.params.id || "";
-  const group= await removeGroupById(groupId);
-  if(!group){
+  const group = await removeGroupById(groupId);
+  if (!group) {
     res.status(404).send({ detail: "Not Found" });
   }
   res.status(204).send(group);
