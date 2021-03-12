@@ -17,6 +17,7 @@
     "express": "~4.16.1",
     "express-fileupload": "^1.2.1",
     "firebase-admin": "^9.5.0",
+    "firebase-functions": "^3.13.2",
     "hbs": "^4.1.1",
     "http-errors": "~1.6.3",
     "mongoose": "^5.11.17",

@@ -11,9 +11,7 @@ const getGroup = async (query, lang, limit = 12, offset = 0) => {
   const total = await Group.countDocuments();
   let results = await Group.find({
     lang: { $regex: lang },
-  })
-    .limit(limit)
-    .skip(offset);
+  }).limit(limit).skip(offset);
 
   if (query) {
     results = results.filter((el) => {
@@ -23,8 +21,8 @@ const getGroup = async (query, lang, limit = 12, offset = 0) => {
       return name.indexOf(q) !== -1 || description.indexOf(q) !== -1;
     });
   }
-
   const count = results.length;
+
   return {
     total,
     count,
