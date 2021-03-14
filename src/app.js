@@ -13,7 +13,7 @@ const usersRouter = require("./routes/users");
 const workshopsRouter = require("./routes/workshops");
 const groupsRouter = require("./routes/groups");
 const eventsRouter = require("./routes/events");
-const { checkAuth } = require("./middlewares/auth");
+// const { checkAuth } = require("./middlewares/auth");
 
 initializeApp();
 

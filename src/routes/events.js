@@ -9,11 +9,10 @@ const {
 
 /* GET /events */
 router.get("/", async (req, res) => {
-  const lang = req.query.lang || "";
   const q = req.query.search || "";
   const limit = parseInt(req.query.limit) || 10;
   const offset = parseInt(req.query.offset) || 0;
-  const events = await getEvent(q, lang, limit, offset);
+  const events = await getEvent(q, limit, offset);
   res.send(events);
 });
 

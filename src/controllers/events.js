@@ -1,4 +1,4 @@
-const Event = require("../models/events");
+const Event = require("../models/event");
 
 const createEvent = (event) => {
   return Event.create(event).then((docEvent) => {
@@ -7,11 +7,9 @@ const createEvent = (event) => {
   });
 };
 
-const getEvent = async (query, lang, limit = 12, offset = 0) => {
+const getEvent = async (query, limit = 12, offset = 0) => {
   const total = await Event.countDocuments();
-  let results = await Event.find({
-    lang: { $regex: lang },
-  }).limit(limit).skip(offset);
+  let results = await Event.find({}).limit(limit).skip(offset);
   
   if (query) {
     results = results.filter((el) => {
