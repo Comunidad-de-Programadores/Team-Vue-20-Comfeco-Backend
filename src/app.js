@@ -13,6 +13,7 @@ const usersRouter = require("./routes/users");
 const workshopsRouter = require("./routes/workshops");
 const groupsRouter = require("./routes/groups");
 const eventsRouter = require("./routes/events");
+const BannsRouter = require("./routes/Banns");
 // const { checkAuth } = require("./middlewares/auth");
 
 initializeApp();
@@ -45,6 +46,7 @@ app.use("/users", usersRouter);
 app.use("/workshops", workshopsRouter);
 app.use("/groups", groupsRouter);
 app.use("/events", eventsRouter);
+app.use("/Banns", BannsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
