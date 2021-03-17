@@ -8,7 +8,7 @@ const createWorkshop = (workshop) => {
 };
 
 const getWorkshops = async (area, limit = 10, offset = 0) => {
-  const total = await Workshop.count();
+  const total = await Workshop.countDocuments();
   const results = await Workshop.find({ area: { $regex: area } })
     .limit(limit)
     .skip(offset);

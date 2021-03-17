@@ -24,9 +24,9 @@ const removeBannById = (BannId) => {
   return Bann.findByIdAndRemove(BannId);
 };
 
-module.exports= {
+module.exports = {
   createBann,
   getBann,
   getBannById,
-  removeBannById
+  removeBannById,
 };

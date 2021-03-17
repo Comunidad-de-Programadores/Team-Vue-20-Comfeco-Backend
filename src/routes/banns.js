@@ -5,7 +5,7 @@ const {
   getBann,
   getBannById,
   removeBannById,
-} = require("../controllers/Banns");
+} = require("../controllers/banns");
 
 /* GET /Banns */
 router.get("/", async (req, res) => {
@@ -15,7 +15,6 @@ router.get("/", async (req, res) => {
   const Banns = await getBann(q, limit, offset);
   res.send(Banns);
 });
-
 
 /* GET /Banns/:id */
 router.get("/:id", async (req, res) => {
