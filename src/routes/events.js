@@ -16,13 +16,14 @@ router.get("/", async (req, res) => {
   res.send(events);
 });
 
-
 /* GET /events/:id */
 router.get("/:id", async (req, res) => {
   const eventId = req.params.id || "";
   const event = await getEventById(eventId);
   if (!event) {
     res.status(404).send({ detail: "Not Found" });
+  } else {
+    res.send(event);
   }
 });
 
